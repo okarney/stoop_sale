@@ -1,0 +1,51 @@
+body, html, .App, #root {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: azure;
+  }
+  
+  #tagline {
+    text-align: center;
+  }
+  
+  #location {
+    margin-bottom: 100px
+  }
+  
+  img {
+    align-items: center;
+    max-height: 20%;
+    max-width: 50%;
+    display: block;
+    margin: auto;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  h1 {
+    font-family:'Playfair Display', serif;;
+    text-align: center;
+  }
+  
+  .paper {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 10px;
+    height: 10%;
+    width: 60%;
+    background-color: #f5e6d0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0.2, 0.2); 
+    border-radius: 15px;
+    /*display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;*/
+  }
