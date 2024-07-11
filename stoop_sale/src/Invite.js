@@ -7,7 +7,7 @@ function Invite() {
       <body>
       <main> 
         <div className = "paper">
-          <h1>What's the Scoop?</h1> 
+          <h1>What's the Stoop?</h1> 
           <p id = "tagline">Come out to our stoop sale this weekend to find the latest styles!</p>
           <img src={clothes} alt="Clothes Rack" />
           <p>📅 Date: Saturday, July 13</p>
