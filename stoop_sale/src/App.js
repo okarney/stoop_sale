@@ -1,9 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
+import Map from './components/map';
 
 function App() {
   return (
     <div className="App">
+
+      <div>
+        <h1>Google Map Here!!!</h1>
+        <Map/>
+      </div>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
