@@ -4,8 +4,9 @@ import {useState} from "react";
 import {
     APIProvider,
     Map,
-    // AdvancedMarker,
-    // Pin,
+    Marker,
+    AdvancedMarker,
+    Pin,
     // InfoWindow,
 } from "@vis.gl/react-google-maps";
 
@@ -15,9 +16,10 @@ export default function StoopMap() {
     console.log(process.env.REACT_APP_GOOGLE_MAPS_API_KEY)
     return (
         <APIProvider apiKey={process.env.REACT_APP_GOOGLE_MAPS_API_KEY}>
-        <div style={{marginTop: "5vh", marginBottom: "10vh", height: "50vh", width: "50vh"}}>
-            Google Map!!!
-            <Map zoom={10} center={position}></Map>
+        <div style={{ marginTop: "5vh", marginBottom: "10vh", height: "50vh", width: "62vh"}}>
+            <Map style={{ height: "100%", width: "100%" }} zoom={15} center={position} mapId="fbd2327118eafa58">
+                <AdvancedMarker position={position}></AdvancedMarker>
+            </Map>
 
         </div>
         </APIProvider>
