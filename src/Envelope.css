@@ -256,8 +256,13 @@ body, html {
   text-align: center;
 }
 
+#time {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
 #location {
-  margin-bottom: 20px
+  margin-bottom: 20px;
+  font-family: "Lucida Console", "Courier New", monospace;
 }
 
 img {
