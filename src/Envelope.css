@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&family=Calligraffitti&display=swap');
+
 body, html {
   margin: 0;
   padding: 0;
@@ -149,30 +151,28 @@ body, html {
   z-index: 1001;
 }
 
-/* Invitation Content Styling */
-#fullscreen-letter .content {
-  font-family: 'Arial', sans-serif;
-  color: #333;
-  background-color: #f9f9f9;
-  padding: 40px;
-  max-width: 800px;
-  width: 100%;
-  margin: 20px auto;
-  box-shadow: 0 0 20px rgba(0,0,0,0.1);
-  border-radius: 10px;
-  position: relative;
-}
+
 
 #fullscreen-letter h1 {
-  font-family:'Playfair Display', serif;;
+  background: #cdcdf3;
+  font-family: 'Calligraffitti', cursive;
+  font-weight: 800;
+  font-size: 60px;
+  text-shadow: -15px 5px 20px #ced0d3;
+  letter-spacing: 2px;
   text-align: center;
+  color: #F9f1cc;
+  padding-right: 5%;
+
+  text-shadow: 5px 5px 0px #FFB650, 
+    2px 2px 0px #FFD662, 
+    7px 7px 0px  #FF80BF, 
+    10px 10px 0px #EF5097, 
+    12px 12px 0px #6868AC, 
+    15px 15px 0px #90B1E0;
+    
 }
-/*#fullscreen-letter h1 {
-  color: #4a90e2;
-  font-size: 36px;
-  text-align: center;
-  margin-bottom: 20px;
-}*/
+
 
 #fullscreen-letter h2 {
   color: #e74c3c;
@@ -182,10 +182,10 @@ body, html {
 #location {
   margin-bottom: 100px;
 }
-/*#fullscreen-letter p {
-  line-height: 1.6;
-  margin-bottom: 15px;
-}*/
+
+#fullscreen-letter p {
+  font-weight:500;
+}
 
 #fullscreen-letter strong {
   color: #2c3e50;
@@ -249,20 +249,13 @@ body, html {
   }
 }
 
-/*body, html, .App, #root {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  background-color: azure;
-}*/
 
 #tagline {
   text-align: center;
 }
 
 #location {
-  margin-bottom: 100px
+  margin-bottom: 20px
 }
 
 img {
@@ -281,17 +274,59 @@ main {
   width: 100%;
 }
 
-/*h1 {
-  font-family:'Playfair Display', serif;;
-  text-align: center;
+/*#copy-url{
+  margin-bottom: 20px;
 }*/
+/* CSS */
+#copy-url {
+  margin-bottom: 20px;
+  background-color: #f8e3f4;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 0 18px;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#share{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#copy-url:hover {
+  background-color: #fff;
+}
+
+#copy-url:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 700px) {
+  #copy-url {
+    min-width: 100px;
+    padding: 0 20px;
+  }
+
+}
+
 
 #paper {
   margin-top: 40px;
   margin-bottom: 40px;
   padding: 10px;
   min-height: 90%;
-  width: 60%;
+  min-width: 70%;
   background-color: #f5e6d0;
   box-shadow: 0 4px 8px rgba(0, 0, 0.2, 0.2); 
   border-radius: 15px;

@@ -16,6 +16,18 @@ const Envelope = () => {
     setIsOpen(false);
   };
 
+  const [copied, setCopied] = useState(false);
+
+  function copy() {
+    const el = document.createElement("input");
+    el.value = window.location.href;
+    document.body.appendChild(el);
+    el.select();
+    document.execCommand("copy");
+    document.body.removeChild(el);
+    setCopied(true);
+  }
+
 
   return (
     <div id="container">
@@ -32,23 +44,27 @@ const Envelope = () => {
         <button id="close-button" onClick={closeEnvelope}>Close</button>
         <div id="paper" className={isOpen ? '' : 'hidden'}>
           <button id="close-button" onClick={closeEnvelope}>Close</button>
-          <h1 style={{fontSize: "10vh"}}>What's the Stoop?</h1> 
+          <h1 >What's the Stoop?</h1> 
           <p style={{fontSize: "3vh"}} id="tagline">Come out to our stoop sale this weekend to find the latest styles!</p>
           <img src={clothes} alt="Clothes Rack" />
           <p style={{fontSize: "3vh"}}>📅 Date: Saturday, July 13</p>
           <p>⏰ Time: 8AM - 3PM </p>
 
           <p id = "location">&nbsp;📍 &nbsp;Location: Carroll Gardens on the corner of Court St. and 2nd Pl. </p>
+
+          <div className="stoop-map-container">
+          <StoopMap></StoopMap>
+          </div>
+
+          <div id = "share">
            <p>Spread the word!</p>
+           <button id = "copy-url" onClick={copy}>{!copied ? "Copy link" : "Copied!"}</button>
           <div className = "social">
             <SocialIcon url="https://instagram.com" style={{ height: 35, width: 35 }}/>
             <SocialIcon url="https://x.com" style={{ height: 35, width: 35 }}/>
             <SocialIcon url="https://facebook.com" style={{ height: 35, width: 35 }}/>
             <SocialIcon url="https://tiktok.com" style={{ height: 35, width: 35 }}/>
-
           </div>
-          <div className="stoop-map-container">
-          <StoopMap></StoopMap>
           </div>
 
           <br></br>
