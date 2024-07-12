@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/stoop_sale/static/css/main.d38f950a.css",
-    "main.js": "/stoop_sale/static/js/main.8f71af5b.js",
+    "main.css": "/stoop_sale/static/css/main.763a9c5a.css",
+    "main.js": "/stoop_sale/static/js/main.353330e6.js",
     "static/media/clothes.JPG": "/stoop_sale/static/media/clothes.6c84deaff0090c4eb967.JPG",
     "index.html": "/stoop_sale/index.html",
-    "main.d38f950a.css.map": "/stoop_sale/static/css/main.d38f950a.css.map",
-    "main.8f71af5b.js.map": "/stoop_sale/static/js/main.8f71af5b.js.map"
+    "main.763a9c5a.css.map": "/stoop_sale/static/css/main.763a9c5a.css.map",
+    "main.353330e6.js.map": "/stoop_sale/static/js/main.353330e6.js.map"
   },
   "entrypoints": [
-    "static/css/main.d38f950a.css",
-    "static/js/main.8f71af5b.js"
+    "static/css/main.763a9c5a.css",
+    "static/js/main.353330e6.js"
   ]
 }
