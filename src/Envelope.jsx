@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import './Envelope.css'; // Import CSS for styling
+import clothes from './clothes.JPG';
+//import './invite.css';
+import { SocialIcon } from 'react-social-icons'
 
 const Envelope = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,9 +21,28 @@ const Envelope = () => {
         <div id="flap"></div>
         <div id="letter"></div>
         <div id="wax-stamp"></div>
-      </div>
+     </div>
+     
       <div id="fullscreen-letter" className={isOpen ? '' : 'hidden'}>
         <button id="close-button" onClick={closeEnvelope}>Close</button>
+        <div id = "paper" className={isOpen ? '' : 'hidden'}>
+          <button id="close-button" onClick={closeEnvelope}>Close</button>
+          <h1>What's the Stoop?</h1> 
+          <p id = "tagline">Come out to our stoop sale this weekend to find the latest styles!</p>
+          <img src={clothes} alt="Clothes Rack" />
+          <p>📅 Date: Saturday, July 13</p>
+          <p>⏰ Time: 8AM - 3PM </p>
+          <p id = "location">&nbsp;📍 &nbsp;Location: Carroll Gardens on the corner of 4th St. and 2nd Ave. </p>
+          <p>Spread the word!</p>
+          <div className = "social">
+            <SocialIcon url="https://instagram.com" style={{ height: 35, width: 35 }}/>
+            <SocialIcon url="https://x.com" style={{ height: 35, width: 35 }}/>
+            <SocialIcon url="https://facebook.com" style={{ height: 35, width: 35 }}/>
+            <SocialIcon url="https://tiktok.com" style={{ height: 35, width: 35 }}/>
+          </div>
+          </div>
+        
+{/*
         <div className="content">
           <h1>Neighborhood Garage Sale Extravaganza!</h1>
           <p>Dear Treasure Hunter,</p>
@@ -59,8 +81,10 @@ const Envelope = () => {
           <p>See you there,<br />
           The Sunny Hills Neighborhood Association</p>
         </div>
+*/}
+
+      </div> 
       </div>
-    </div>
   );
 };
 
