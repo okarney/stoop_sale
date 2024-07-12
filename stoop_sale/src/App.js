@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import Map from './components/map';
+import MapContainer from './components/map';
 
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
 
       <div>
         <h1>Google Map Here!!!</h1>
-        <Map/>
+        <MapContainer/>
       </div>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
