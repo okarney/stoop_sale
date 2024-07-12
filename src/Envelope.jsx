@@ -38,7 +38,7 @@ const Envelope = () => {
           <p>📅 Date: Saturday, July 13</p>
           <p>⏰ Time: 8AM - 3PM </p>
 
-          <p>📍 Location: Carroll Gardens on the corner of Court St. and 2nd Pl. </p>
+          <p id = "location">&nbsp;📍 &nbsp;Location: Carroll Gardens on the corner of Court St. and 2nd Pl. </p>
            <p>Spread the word!</p>
           <div className = "social">
             <SocialIcon url="https://instagram.com" style={{ height: 35, width: 35 }}/>
@@ -47,14 +47,15 @@ const Envelope = () => {
             <SocialIcon url="https://tiktok.com" style={{ height: 35, width: 35 }}/>
 
           </div>
-          <div style={{justifyContent: "center", display: "flex"}}>
+          <div className="stoop-map-container">
           <StoopMap></StoopMap>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
+          </div>
 
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
           <CountdownTimer></CountdownTimer>
           </div>
           </div>
@@ -103,7 +104,7 @@ const Envelope = () => {
           <CountdownTimer targetDate="2024-07-13T08:00:00" /> {/* Add CountdownTimer here */}
         </div>
 
-      </div>
+      
   );
 };
 
