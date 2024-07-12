@@ -3,6 +3,7 @@ import './Envelope.css'; // Import CSS for styling
 import clothes from './clothes.JPG';
 //import './invite.css';
 import { SocialIcon } from 'react-social-icons'
+import StoopMap from './Map';
 
 const Envelope = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -40,7 +41,10 @@ const Envelope = () => {
             <SocialIcon url="https://facebook.com" style={{ height: 35, width: 35 }}/>
             <SocialIcon url="https://tiktok.com" style={{ height: 35, width: 35 }}/>
           </div>
+          <StoopMap></StoopMap>
           </div>
+
+          
         
 {/*
         <div className="content">
