@@ -4,6 +4,7 @@ import clothes from './clothes.JPG';
 //import './invite.css';
 import { SocialIcon } from 'react-social-icons'
 import StoopMap from './Map';
+import CountdownTimer from './CountdownTimer';
 
 const Envelope = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -42,6 +43,7 @@ const Envelope = () => {
             <SocialIcon url="https://tiktok.com" style={{ height: 35, width: 35 }}/>
           </div>
           <StoopMap></StoopMap>
+          <CountdownTimer></CountdownTimer>
           </div>
 
           
