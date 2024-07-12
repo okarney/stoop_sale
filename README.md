@@ -2,7 +2,14 @@
 
 ### Project Overview:
 
-Welcome to our Stoop Sale Hackathon project! In this project, we aimed to create a fun and interactive web application that simulates the experience of receiving a special invitation in an animated envelope. Here’s what we managed to accomplish:
+Welcome to our Stoop Sale Hackathon project! In this project, we aimed to create a fun and interactive web application that simulates the experience of receiving a special invitation in an animated envelope. 
+
+### Planning
+We collaborated on Figma to brainstorm and visualize posssible designs for our invitation.
+
+![alt text](https://github.com/okarney/stoop_sale/blob/main/Codedex%20Hackathon.png?raw=true)
+
+Here’s what we managed to accomplish:
 
 ### Key Features:
 
