@@ -254,15 +254,21 @@ body, html {
 
 #tagline {
   text-align: center;
+  /* font-family: "Lucida Console", "Courier New", monospace; */
+
+}
+
+#date {
+  /* font-family: "Lucida Console", "Courier New", monospace; */
 }
 
 #time {
-  font-family: "Lucida Console", "Courier New", monospace;
+  /* font-family: "Lucida Console", "Courier New", monospace; */
 }
 
 #location {
   margin-bottom: 20px;
-  font-family: "Lucida Console", "Courier New", monospace;
+  /* font-family: "Lucida Console", "Courier New", monospace; */
 }
 
 img {
