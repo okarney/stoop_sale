@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 import './Envelope.css'; // Import CSS for styling
 import clothes from './clothes.JPG';
-//import './invite.css';
-import { SocialIcon } from 'react-social-icons'
+import { SocialIcon } from 'react-social-icons';
 import StoopMap from './Map';
+<<<<<<< Updated upstream
 import CountdownTimer from './CountdownTimer';
+=======
+import CountdownTimer from './CountdownTimer'; // Import the CountdownTimer component
+>>>>>>> Stashed changes
 
 const Envelope = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,25 +26,26 @@ const Envelope = () => {
         <div id="flap"></div>
         <div id="letter"></div>
         <div id="wax-stamp"></div>
-     </div>
-     
+      </div>
+
       <div id="fullscreen-letter" className={isOpen ? '' : 'hidden'}>
         <button id="close-button" onClick={closeEnvelope}>Close</button>
-        <div id = "paper" className={isOpen ? '' : 'hidden'}>
+        <div id="paper" className={isOpen ? '' : 'hidden'}>
           <button id="close-button" onClick={closeEnvelope}>Close</button>
           <h1>What's the Stoop?</h1> 
-          <p id = "tagline">Come out to our stoop sale this weekend to find the latest styles!</p>
+          <p id="tagline">Come out to our stoop sale this weekend to find the latest styles!</p>
           <img src={clothes} alt="Clothes Rack" />
           <p>📅 Date: Saturday, July 13</p>
           <p>⏰ Time: 8AM - 3PM </p>
-          <p id = "location">&nbsp;📍 &nbsp;Location: Carroll Gardens on the corner of 4th St. and 2nd Ave. </p>
+          <p id="location">&nbsp;📍 &nbsp;Location: Carroll Gardens on the corner of 4th St. and 2nd Ave.</p>
           <p>Spread the word!</p>
-          <div className = "social">
-            <SocialIcon url="https://instagram.com" style={{ height: 35, width: 35 }}/>
-            <SocialIcon url="https://x.com" style={{ height: 35, width: 35 }}/>
-            <SocialIcon url="https://facebook.com" style={{ height: 35, width: 35 }}/>
-            <SocialIcon url="https://tiktok.com" style={{ height: 35, width: 35 }}/>
+          <div className="social">
+            <SocialIcon url="https://instagram.com" style={{ height: 35, width: 35 }} />
+            <SocialIcon url="https://x.com" style={{ height: 35, width: 35 }} />
+            <SocialIcon url="https://facebook.com" style={{ height: 35, width: 35 }} />
+            <SocialIcon url="https://tiktok.com" style={{ height: 35, width: 35 }} />
           </div>
+<<<<<<< Updated upstream
           <StoopMap></StoopMap>
           <CountdownTimer></CountdownTimer>
           </div>
@@ -86,12 +90,18 @@ const Envelope = () => {
           
           <p>See you there,<br />
           The Sunny Hills Neighborhood Association</p>
+=======
+          <StoopMap />
+          <CountdownTimer targetDate="2024-07-13T08:00:00" /> {/* Add CountdownTimer here */}
+>>>>>>> Stashed changes
         </div>
-*/}
-
-      </div> 
       </div>
+    </div>
   );
+<<<<<<< Updated upstream
 };
 
 export default Envelope;
+=======
+};
+>>>>>>> Stashed changes
