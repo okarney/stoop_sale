@@ -31,9 +31,9 @@ Social Media icons were added to the page.
 
 ### What We Tried:
 
-- API Integration (Unsuccessful Attempt):
+- API Integration (Somewhat Successful):
 
-We attempted to integrate an API to fetch dynamic content for the invitation but faced technical challenges that prevented it from working as intended. Despite this, we learned valuable lessons about API integration and troubleshooting.
+We attempted to integrate an API to fetch dynamic content for the invitation but faced technical challenges that prevented it from working as intended, causing the map to appear distorted. Despite this, we learned valuable lessons about API integration and troubleshooting.
 
 ### Project Structure:
 - Envelope.jsx:
