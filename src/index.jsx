@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css'; // Import your CSS file
-import Envelope from './Envelope'; // Import your Envelope component
-import CountdownTimer from './CountdownTimer'; // Import the CountdownTimer component
+import './index.css'; 
+import Envelope from './Envelope';
+import CountdownTimer from './CountdownTimer';
 
 const Index = () => {
   return (
