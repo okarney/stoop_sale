@@ -108,4 +108,4 @@ Thank you for checking out our Stoop Sale Hackathon project! If you have any que
 
 Trevor,
 Kalei,
-Olivia,
+Olivia
