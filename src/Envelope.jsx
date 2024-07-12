@@ -16,13 +16,17 @@ const Envelope = () => {
     setIsOpen(false);
   };
 
+
   return (
     <div id="container">
+
       <div id="envelope" className={isOpen ? 'open' : ''} onClick={openEnvelope}>
         <div id="flap"></div>
         <div id="letter"></div>
         <div id="wax-stamp"></div>
+
       </div>
+
 
       <div id="fullscreen-letter" className={isOpen ? '' : 'hidden'}>
         <button id="close-button" onClick={closeEnvelope}>Close</button>
@@ -33,16 +37,20 @@ const Envelope = () => {
           <img src={clothes} alt="Clothes Rack" />
           <p>📅 Date: Saturday, July 13</p>
           <p>⏰ Time: 8AM - 3PM </p>
-          <p id="location">&nbsp;📍 &nbsp;Location: Carroll Gardens on the corner of 4th St. and 2nd Ave.</p>
-          <p>Spread the word!</p>
-          <div className="social">
-            <SocialIcon url="https://instagram.com" style={{ height: 35, width: 35 }} />
-            <SocialIcon url="https://x.com" style={{ height: 35, width: 35 }} />
-            <SocialIcon url="https://facebook.com" style={{ height: 35, width: 35 }} />
-            <SocialIcon url="https://tiktok.com" style={{ height: 35, width: 35 }} />
+
+          <p>📍 Location: Carroll Gardens on the corner of Court St. and 2nd Pl. </p>
+           <p>Spread the word!</p>
+          <div className = "social">
+            <SocialIcon url="https://instagram.com" style={{ height: 35, width: 35 }}/>
+            <SocialIcon url="https://x.com" style={{ height: 35, width: 35 }}/>
+            <SocialIcon url="https://facebook.com" style={{ height: 35, width: 35 }}/>
+            <SocialIcon url="https://tiktok.com" style={{ height: 35, width: 35 }}/>
+
           </div>
+          <div style={{justifyContent: "center", display: "flex"}}>
           <StoopMap></StoopMap>
           <CountdownTimer></CountdownTimer>
+          </div>
           </div>
 
           
@@ -88,6 +96,7 @@ const Envelope = () => {
           <StoopMap />
           <CountdownTimer targetDate="2024-07-13T08:00:00" /> {/* Add CountdownTimer here */}
         </div>
+
       </div>
     </div>
   );
