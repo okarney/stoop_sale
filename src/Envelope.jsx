@@ -3,11 +3,7 @@ import './Envelope.css'; // Import CSS for styling
 import clothes from './clothes.JPG';
 import { SocialIcon } from 'react-social-icons';
 import StoopMap from './Map';
-<<<<<<< Updated upstream
 import CountdownTimer from './CountdownTimer';
-=======
-import CountdownTimer from './CountdownTimer'; // Import the CountdownTimer component
->>>>>>> Stashed changes
 
 const Envelope = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -45,7 +41,6 @@ const Envelope = () => {
             <SocialIcon url="https://facebook.com" style={{ height: 35, width: 35 }} />
             <SocialIcon url="https://tiktok.com" style={{ height: 35, width: 35 }} />
           </div>
-<<<<<<< Updated upstream
           <StoopMap></StoopMap>
           <CountdownTimer></CountdownTimer>
           </div>
@@ -90,18 +85,12 @@ const Envelope = () => {
           
           <p>See you there,<br />
           The Sunny Hills Neighborhood Association</p>
-=======
           <StoopMap />
           <CountdownTimer targetDate="2024-07-13T08:00:00" /> {/* Add CountdownTimer here */}
->>>>>>> Stashed changes
         </div>
       </div>
     </div>
   );
-<<<<<<< Updated upstream
 };
 
 export default Envelope;
-=======
-};
->>>>>>> Stashed changes
