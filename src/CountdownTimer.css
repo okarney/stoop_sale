@@ -8,6 +8,12 @@
     border-radius: 10px;
     color: white;
   }
+  .countdown-header {
+    font-size: 2em;
+    color: #ff6347; /* Example color, adjust as needed */
+    text-align: center;
+    margin-bottom: 20px;
+  }
   
   .timer-display {
     display: flex;

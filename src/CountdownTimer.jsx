@@ -43,6 +43,7 @@ const CountdownTimer = ({ targetDate }) => {
 
   return (
     <div className="countdown-timer">
+      <h2 className="countdown-header">Countdown to the Stoop Sale Extravaganza!</h2>
       {timerComponents.length ? (
         <div className="timer-display">{timerComponents}</div>
       ) : (
