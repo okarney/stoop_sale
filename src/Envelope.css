@@ -155,6 +155,8 @@ body, html {
 
 #fullscreen-letter h1 {
   background: #cdcdf3;
+  border-style: dashed;
+  border-color: black;
   font-family: 'Calligraffitti', cursive;
   font-weight: 800;
   font-size: 60px;
