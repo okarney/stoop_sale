@@ -49,6 +49,12 @@ const Envelope = () => {
           </div>
           <div style={{justifyContent: "center", display: "flex"}}>
           <StoopMap></StoopMap>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+
           <CountdownTimer></CountdownTimer>
           </div>
           </div>
