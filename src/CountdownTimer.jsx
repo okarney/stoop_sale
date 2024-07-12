@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './CountdownTimer.css';
 
-
 const CountdownTimer = ({ targetDate }) => {
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
-  const [isRunning, setIsRunning] = useState(true);
 
   function calculateTimeLeft() {
     const difference = +new Date(targetDate) - +new Date();
@@ -23,18 +21,12 @@ const CountdownTimer = ({ targetDate }) => {
   }
 
   useEffect(() => {
-    if (!isRunning) return;
-
     const timer = setTimeout(() => {
       setTimeLeft(calculateTimeLeft());
     }, 1000);
 
     return () => clearTimeout(timer);
   });
-
-  const toggleTimer = () => {
-    setIsRunning(!isRunning);
-  };
 
   const timerComponents = Object.keys(timeLeft).map((interval) => {
     if (!timeLeft[interval]) {
@@ -52,12 +44,7 @@ const CountdownTimer = ({ targetDate }) => {
   return (
     <div className="countdown-timer">
       {timerComponents.length ? (
-        <>
-          <div className="timer-display">{timerComponents}</div>
-          <button className="toggle-button" onClick={toggleTimer}>
-            {isRunning ? 'Pause' : 'Resume'}
-          </button>
-        </>
+        <div className="timer-display">{timerComponents}</div>
       ) : (
         <span>Time's up!</span>
       )}
