@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './CountdownTimer.css';
 
-
 const CountdownTimer = ({ targetDate }) => {
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
   const [isRunning, setIsRunning] = useState(true);
@@ -30,7 +29,7 @@ const CountdownTimer = ({ targetDate }) => {
     }, 1000);
 
     return () => clearTimeout(timer);
-  });
+  }, [targetDate, isRunning]); // Include targetDate in dependency array
 
   const toggleTimer = () => {
     setIsRunning(!isRunning);
