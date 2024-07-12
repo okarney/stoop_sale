@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+Stoop Sale Hackathon Project
+Project Overview
+Welcome to our Stoop Sale Hackathon project! In this project, we aimed to create a fun and interactive web application that simulates the experience of receiving a special invitation in an animated envelope. Here’s what we managed to accomplish:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Key Features
+React Animation for Opening Envelope:
 
-## Available Scripts
+We implemented a React component that animates the opening of an envelope. This component adds a delightful visual touch, making the experience of receiving an invitation more engaging.
+Interactive Countdown Timer:
 
-In the project directory, you can run:
+Inside the opened envelope, we embedded an interactive countdown timer. The timer counts down to a specific date (August 1, 2024), adding a sense of urgency and anticipation for the event.
+CSS Styling:
 
-### `npm start`
+The envelope and its contents are styled using CSS to enhance the visual appeal. We carefully selected certain fonts to give the invitation a polished and inviting look.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+What We Tried
+API Integration (Unsuccessful Attempt):
+We attempted to integrate an API to fetch dynamic content for the invitation but faced technical challenges that prevented it from working as intended. Despite this, we learned valuable lessons about API integration and troubleshooting.
+Project Structure
+Envelope.jsx:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This component handles the animation for the opening envelope and contains the invitation content.
+CountdownTimer.jsx:
 
-### `npm test`
+This component displays the countdown timer and is embedded within the Envelope.jsx component.
+Styles:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+We used CSS to style the envelope and its contents, ensuring a cohesive and attractive design.
+Installation and Usage
+To run the project locally, follow these steps:
 
-### `npm run build`
+Clone the Repository:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+bash
+Copy code
+git clone https://github.com/okarney/stoop-sale.git
+cd stoop-sale
+Install Dependencies:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+bash
+Copy code
+npm install
+Start the Development Server:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+bash
+Copy code
+npm start
+Open your browser and navigate to http://localhost:3000 to see the application in action.
 
-### `npm run eject`
+Lessons Learned
+Throughout this hackathon, we gained experience in:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Creating smooth animations in React.
+Building and styling interactive components with CSS.
+Working with countdown timers in a React environment.
+Troubleshooting API integration issues.
+Future Improvements
+Successful API Integration:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+We plan to revisit the API integration to fetch dynamic content for the invitation, making the application even more versatile.
+Enhanced Animations:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+We aim to refine the envelope animation for a more seamless and realistic experience.
+Additional Features:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Adding more interactive elements and customization options to the invitation content.
+Conclusion
+Despite some challenges, we are proud of what we achieved during this hackathon. Our project showcases our ability to create engaging, visually appealing web applications using React and CSS. We look forward to further improving and expanding this project in the future.
 
-## Learn More
+Thank you for checking out our Stoop Sale Hackathon project! If you have any questions or feedback, feel free to reach out.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Team Members:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Trevor
+Kalei
+Olivia
