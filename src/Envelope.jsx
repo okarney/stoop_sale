@@ -72,7 +72,7 @@ const Envelope = () => {
           <br></br>
           <br></br>
           <br></br>
-          <CountdownTimer targetDate="2024-08-01T00:00:00" />
+          {isOpen && <CountdownTimer targetDate="2024-08-01T00:00:00" />}
           </div>
           </div>
 
