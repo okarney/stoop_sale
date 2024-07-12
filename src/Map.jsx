@@ -10,9 +10,9 @@ import {
 export default function StoopMap() {
     const position = {lat: 40.679481, lng: -73.997257};
 
-    console.log(process.env.GOOGLE_MAP_API_KEY)
+    console.log(process.env.REACT_APP_GOOGLE_MAPS_API_KEY)
     return (
-        <APIProvider apiKey={process.env.GOOGLE_MAP_API_KEY}>
+        <APIProvider apiKey={process.env.REACT_APP_GOOGLE_MAPS_API_KEY}>
         <div style={{ marginTop: "5vh", marginBottom: "10vh", height: "50vh", width: "62vh"}}>
             <Map style={{ height: "100%", width: "100%" }} zoom={15} center={position} mapId="fbd2327118eafa58">
                 <AdvancedMarker position={position}></AdvancedMarker>
