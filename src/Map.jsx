@@ -1,12 +1,9 @@
 "use client";
 
-import {useState} from "react";
 import {
     APIProvider,
     Map,
-    Marker,
     AdvancedMarker,
-    Pin,
     // InfoWindow,
 } from "@vis.gl/react-google-maps";
 
