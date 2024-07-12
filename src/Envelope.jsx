@@ -45,31 +45,36 @@ const Envelope = () => {
         <div id="paper" className={isOpen ? '' : 'hidden'}>
           <button id="close-button" onClick={closeEnvelope}>Close</button>
           <h1 >What's the Stoop?</h1> 
-          <p style={{fontSize: "3vh"}} id="tagline">Come out to our stoop sale this weekend to find the latest styles!</p>
+          <p style={{fontSize: "3.4vh", fontStyle: "italic", marginBottom: 10}} id="tagline">Come out to our stoop sale to find the latest styles!</p>
+          <br></br>
           <img src={clothes} alt="Clothes Rack" />
-          <p style={{fontSize: "3.2vh"}}>📅 Date: Thursday, August 1</p>
-          <p id = "time">⏰ Time: 8AM - 3PM </p>
-
-          <p id = "location"> &nbsp;📍&nbsp;Location: Carroll Gardens on the corner of Court St. and 2nd Pl. </p>
+          <br></br>
+          <p style={{fontSize: "3.0vh"}} id = "date">📅 Date: Thursday, August 1</p>
+          <p style={{fontSize: "3.0vh"}} id = "time">⏰ Time: 8AM - 3PM </p>
+          <p style={{fontSize: "3.0vh"}} id = "location">📍Location: Carroll Gardens on the corner of Court St. and 2nd Pl. </p>
 
           <div className="stoop-map-container">
           <StoopMap></StoopMap>
           </div>
 
           <div id = "share">
-           <p>Spread the word!</p>
+           <p style={{fontSize: "3.0vh", marginBottom: 20, marginTop: 0}}>We will have clothes, shoes, and home decorations at bargain prices! Spread the word!</p>
+
            <button id = "copy-url" onClick={copy}>{!copied ? "Copy link" : "Copied!"}</button>
+           <br></br>
+           <br></br>
+
           <div className = "social">
-            <SocialIcon url="https://instagram.com" style={{ height: 35, width: 35 }}/>
-            <SocialIcon url="https://x.com" style={{ height: 35, width: 35 }}/>
-            <SocialIcon url="https://facebook.com" style={{ height: 35, width: 35 }}/>
-            <SocialIcon url="https://tiktok.com" style={{ height: 35, width: 35 }}/>
+            <SocialIcon url="https://instagram.com" style={{ height: 50, width: 50, marginRight: 20, marginLeft: 25 }}/>
+            <SocialIcon url="https://x.com" style={{ height: 50, width: 50, marginRight: 20 }}/>
+            <SocialIcon url="https://facebook.com" style={{ height: 50, width: 50, marginRight: 20 }}/>
+            <SocialIcon url="https://tiktok.com" style={{ height: 50, width: 50, marginRight: 20 }}/>
           </div>
           </div>
 
           <br></br>
           {/* <br></br> */}
-          <br></br>
+          {/* <br></br> */}
           <br></br>
           <br></br>
           {isOpen && <CountdownTimer targetDate="2024-08-01T08:00:00" />}
