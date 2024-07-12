@@ -18,6 +18,10 @@ CSS Styling:
 
 The envelope and its contents are styled using CSS to enhance the visual appeal. We carefully selected certain fonts to give the invitation a polished and inviting look.
 
+Icon adding:
+
+Social Media icons were added to the page.
+
 What We Tried:
 
 API Integration (Unsuccessful Attempt):
